@@ -5,13 +5,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Valtec clone</title>
-  
+
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
+  <!-- NAVBAR -->
+  <nav class="sitenav fixed-top navbar navbar-expand-md px-0 navbar-light bg-white">
+    <div class="container flex-wrap justify-content-center">
+      <div class="sitenav__top row w-100 no-gutters align-items-center">
+        <div class="col-md-4 d-flex flex-wrap justify-content-between">
+          <p class="mb-0">Качество, проверенное временем</p>
+          <a href="tel:+380445039103">+38 044 503 91 03</a>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <a href="index.html">
+            <img src="https://placehold.it/209x46" alt="Logo" width="209" height="46">
+          </a>
+        </div>
+        <div class="col-md-3 offset-md-1 d-flex">
+          <a class="mr-2" href="#">РУС</a>
+          <a class="mr-2" href="#">УКР</a>
+          <div class="ml-auto">USD: 28</div>
+        </div>
+      </div><!-- sitenav__top -->
+
+      <div class="collapse navbar-collapse py-3">
+        <div class="sitenav__bottom row w-100 align-items-center">
+          <div class="col-md-2">
+            <button class="btn btn-outline-primary btn-sm" type="button">Каталог товаров</button>
+          </div>
+          <div class="col-md-8">
+            <form class="px-4" method="GET" action="search.php">
+              <label class="sr-only" for="sitenav-search-input">Поиск</label>
+              <input class="form-control form-control-sm border-0 bg-light" type="search" id="sitenav-search-input" name="search" placeholder="Я ищу" required>
+            </form>
+          </div>
+          <div class="col-md-2 text-right">
+            <button class="btn btn-sm" type="button">Меню</button>
+          </div>
+        </div><!-- sitenav__bottom -->
+      </div>
+    </div>
+  </nav>
 
   <script src="js/scripts.min.js"></script>
 </body>
