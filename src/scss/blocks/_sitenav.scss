@@ -1,3 +1,11 @@
-.sitenav {
-  font-size: 14px;
+@include media-breakpoint-down(sm) {
+  .sitenav__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sitenav__top {
+    flex-grow: 1;
+    margin: 0;
+  }
 }
