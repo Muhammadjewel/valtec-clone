@@ -53,7 +53,8 @@ gulp.task('js', function () {
   return gulp.src(sources.js)
     .pipe(concat('scripts.min.js')) // Concatenate JS files into one
     .pipe(uglify()) // Minify the output file
-    .pipe(gulp.dest('src/js'));
+    .pipe(gulp.dest('src/js'))
+    .pipe(browserSync.reload({ stream: true }));;
 });
 
 gulp.task('watch', function () {
