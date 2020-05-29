@@ -13,7 +13,7 @@
 <body>
 
   <!-- SITE-HEADER -->
-  <header class="site-header fixed-top">
+  <header class="site-header fixed-top d-flex flex-column">
     <!-- NAVBAR -->
     <nav class="sitenav">
       <div class="container sitenav__container">
@@ -41,8 +41,9 @@
         <!-- sitenav__bottom -->
         <div class="sitenav__bottom row align-items-center py-3">
           <div class="d-none d-md-block col-md-3">
-            <button class="btn btn-sm btn-outline-primary" type="button">Каталог товаров</button>
+            <button class="site-header__catalog-toggler btn btn-sm btn-outline-primary" type="button">Каталог товаров</button>
           </div>
+
           <div class="d-none d-md-block col-md-6">
             <form method="GET" action="search.php">
               <label class="sr-only" for="sitenav-search-input">Поиск</label>
@@ -50,6 +51,7 @@
                 placeholder="Я ищу" required>
             </form>
           </div>
+
           <div class="col-md-3 text-right"> 
             <button class="btn btn-sm btn-outline-primary" type="button">Меню</button>
           </div>
@@ -58,6 +60,205 @@
     </nav>
 
     <!-- CATALOG DROPDOWN MENU -->
+    <section class="site-header__catalog flex-grow-1 overflow-auto py-4">
+      <h2 class="sr-only">Каталог товаров</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Товар #1</a></li>
+              <li><a href="#">Товар #2</a></li>
+              <li><a href="#">Товар #3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </header>
 
   

@@ -1,3 +1,19 @@
 .site-header {
   font-size: 14px;
+
+  &--with-catalog {
+    height: 100%;
+  }
+}
+.site-header__catalog {
+  display: none;
+
+  &--open {
+    display: block;
+  }
+}
+@include media-breakpoint-down(sm) {
+  .site-header__catalog {
+    display: none;
+  }
 }
