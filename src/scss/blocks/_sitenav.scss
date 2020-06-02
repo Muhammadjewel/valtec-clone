@@ -1,10 +1,16 @@
 .sitenav__menu {
+  display: none;
   position: absolute;
+  z-index: 1;
   top: 100%;
   right: 20px;
   width: 300px;
   height: 600px;
   overflow: auto;
+
+  &--open {
+    display: block;
+  }
 }
 .sitenav__menu-close {
   position: absolute;
