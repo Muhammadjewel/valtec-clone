@@ -16,4 +16,9 @@ $(document).ready(function () {
   $('.sitenav__menu-close').on('click', function () {
     elSitenav.removeClass('sitenav__menu--open');
   });
+
+  $('.sitenav__dropdown-toggler').on('click', function (evt) {
+    evt.preventDefault();
+    $(this).next().slideToggle();
+  })
 });
