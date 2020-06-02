@@ -6,7 +6,10 @@
   }
 }
 .site-header__catalog {
+  position: relative;
+  z-index: 1;
   display: none;
+  background-color: #fff;
 
   &--open {
     display: block;
