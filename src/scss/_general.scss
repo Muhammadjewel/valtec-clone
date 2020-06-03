@@ -12,15 +12,9 @@ html {
 }
 body {
   padding: 0;
-  padding-top: 141px;
   margin: 0;
 }
 img {
   max-width: 100%;
   height: auto;
-}
-@include media-breakpoint-down(sm) {
-  body {
-    padding-top: 78px;
-  }
 }

@@ -8,28 +8,6 @@ $(document).ready(function () {
   });
 
   // Move site-header up on scroll down and set to initial state on scroll up on medium and up screens
-  var lastScrollTop = window.screenTop;
-  var changeSiteHeaderMarginOnScroll = function () {
-    $(window).on('scroll', function () {
-      var scrollTop = $(this).scrollTop();
-      if (scrollTop < lastScrollTop) {
-        elSiteHeader.css({ 'margin-top': 0 });
-      } else {
-        elSiteHeader.css({ 'margin-top': '-78px' });
-      }
-      lastScrollTop = scrollTop;
-    });
-  };
-
-  if ($(window).outerWidth() >= 768) {
-    changeSiteHeaderMarginOnScroll();
-  }
-
-  $(window).resize(function () {
-    if ($(window).outerWidth() >= 768) {
-      changeSiteHeaderMarginOnScroll();
-    }
-  })
 
 
   // SITENAV
@@ -48,7 +26,4 @@ $(document).ready(function () {
     evt.preventDefault();
     $(this).next().slideToggle();
   })
-
-  // Add/remove siteHeaderStyleChangeListener based on mouseenter and mouseleave
-
 });
