@@ -13,11 +13,9 @@ $(document).ready(function () {
       if(evt.originalEvent.detail > 0 || evt.originalEvent.wheelDelta < 0) {
         // scroll down
         elSiteHeader.css({ 'margin-top': '-' + $('.sitenav__top').outerHeight() + 'px' });
-        console.log('Down');
       } else {
         // scroll up
         elSiteHeader.css({ 'margin-top': 0 });
-        console.log('Up');
       }
     });
   };
