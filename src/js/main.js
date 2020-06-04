@@ -50,7 +50,7 @@ $(document).ready(function () {
   };
 
   var addOnWindowScroll = function () {
-    $(window).on('scroll', debounce(changeSiteHeaderPosition, 200, true));
+    $(window).on('scroll', debounce(changeSiteHeaderPosition, 15));
   };
 
   var removeOnWindowScroll = function () {
