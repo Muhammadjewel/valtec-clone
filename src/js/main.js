@@ -1,3 +1,19 @@
+// HELPER FUNCTIONS
+var debounce = function (func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
+
 $(document).ready(function () {
   var lastScrollTop = $(window).scrollTop();
 
@@ -34,7 +50,7 @@ $(document).ready(function () {
   };
 
   var addOnWindowScroll = function () {
-    $(window).on('scroll', changeSiteHeaderPosition);
+    $(window).on('scroll', debounce(changeSiteHeaderPosition, 200, true));
   };
 
   var removeOnWindowScroll = function () {
