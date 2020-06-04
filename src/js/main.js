@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  var lastScrollTop = $(window).scrollTop();
+
   // MOST USED ELEMENTS
   var elSiteHeader = $('.site-header');
   var elSitenavMenu = elSiteHeader.find('.sitenav__menu');
@@ -11,14 +13,48 @@ $(document).ready(function () {
     } else {
       var paddingTop = elSiteHeader.outerHeight();
     }
-    console.log(paddingTop);
+    
     $('body').css({ 'padding-top': paddingTop + 'px' });
+  };
+
+  var changeSiteHeaderPosition = function (evt) {
+    var scrollTop = $(this).scrollTop();
+    if (scrollTop > lastScrollTop){
+      // downscroll code
+      elSiteHeader.css({ 'margin-top': '-' + $('.sitenav__top').outerHeight() + 'px' });
+    } else {
+      // upscroll code
+      resetSiteHeaderPosition();
+    }
+    lastScrollTop = scrollTop;
+  };
+
+  var resetSiteHeaderPosition = function () {
+    elSiteHeader.css({ 'margin-top': '0' });
+  };
+
+  var addOnWindowScroll = function () {
+    $(window).on('scroll', changeSiteHeaderPosition);
+  };
+
+  var removeOnWindowScroll = function () {
+    resetSiteHeaderPosition();
+    $(window).off('scroll', changeSiteHeaderPosition);
+  };
+
+  var manageSiteHeaderOnWindowScroll = function () {
+    if ($(window).outerWidth() >= 768) {
+      addOnWindowScroll();
+    } else {
+      removeOnWindowScroll();
+    }
   };
 
   // GLOBAL
   setBodyPaddingTop();
-  
-  window.addEventListener('resize', setBodyPaddingTop, { passive: true });
+  manageSiteHeaderOnWindowScroll();
+  window.addEventListener('resize', setBodyPaddingTop);
+  window.addEventListener('resize', manageSiteHeaderOnWindowScroll);
 
 
   // SITE-HEADER
