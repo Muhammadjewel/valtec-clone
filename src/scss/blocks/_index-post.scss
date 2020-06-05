@@ -1,0 +1,18 @@
+.index-post {
+  overflow: hidden;
+}
+.index-post .card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.index-post .card-img {
+  height: 100%;
+  min-height: 190px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.index-post:hover .card-img {
+  transform: scale(1.2);
+}
+.index-post .stretched-link {
+  font-size: 17px;
+}
