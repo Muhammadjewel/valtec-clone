@@ -14,6 +14,7 @@ var sources = {
   scss: 'src/scss/**/*.scss',
   js: [
     'node_modules/jquery/dist/jquery.min.js',
+    'src/js/popper.min.js',
     'node_modules/bootstrap/dist/js/bootstrap.min.js',
     'src/js/main.js'
   ]
