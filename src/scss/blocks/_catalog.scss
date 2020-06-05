@@ -1,3 +1,11 @@
+.catalog__card {
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,.075);
+  }
+}
+
 @include media-breakpoint-up(sm) {
   .catalog__card {
     min-height: 350px;
