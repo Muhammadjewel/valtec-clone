@@ -34,35 +34,94 @@
       <div class="container">
         <h2 class="h4 mb-4 text-uppercase">Контакты</h2>
 
-        <section class="row px-3 py-4 mb-5 bg-white">
-          <h3 class="sr-only">Контактная форма</h3>
-          <div class="col-md-8 col-lg-8">
-            <form method="POST">
-              <section>
-                <h4 class="h6 mb-3">Контактные данные</h4>
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <label class="sr-only" for="name-input">Имя</label>
-                      <input class="form-control" id="name-input" type="text" name="name" placeholder="Имя" required>
+        <div class="row px-3 pt-4 pb-5 mb-5 bg-white">
+          <section class="col-md-8 col-lg-9 mb-4">
+            <h3 class="sr-only">Контактная форма</h3>
+              <form method="POST">
+                <section class="mb-3">
+                  <h4 class="h6 mb-3">Контактные данные</h4>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="sr-only" for="name-input">Имя</label>
+                        <input class="form-control" id="name-input" type="text" name="name" placeholder="Имя" required>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="sr-only" for="phone-input">Номер телефона</label>
+                        <input class="form-control" id="phone-input" type="tel" name="phone" placeholder="Ваш номер телефона" required>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="sr-only" for="email-input">Email</label>
+                        <input class="form-control" id="email-input" type="email" name="email" placeholder="Email" required>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="sr-only" for="city-input">Город</label>
+                        <input class="form-control" id="city-input" type="text" name="city" placeholder="Ваш город" required>
+                      </div>
                     </div>
                   </div>
+                </section>
 
-                  <div class="col-lg-6">
+                <div class="row mb-3">
+                  <section class="col-lg-6">
+                    <h4 class="h6 mb-3">Тип обращения</h4>
                     <div class="form-group">
-                      <label class="sr-only" for="phone-input">Номер телефона</label>
-                      <input class="form-control" id="phone-input" type="tel" name="phone" placeholder="Ваш номер телефона" required>
+                      <label class="sr-only" for="contact-topic-input">Тип обращения</label>
+                      <select class="form-control" name="contact_topic" id="contact-topic-input">
+                        <option value="consultation" selected>Техническая консультация</option>
+                        <option value="partnership_price">Запрос о сотрудничестве и ценах</option>
+                        <option value="info">Запрос на информацию</option>
+                        <option value="documentation">Запрос документации</option>
+                        <option value="other">Прочие вопросы</option>
+                        <option value="webinar">Вебинары и семинары</option>
+                      </select>
                     </div>
+                  </section>
+
+                  <section class="col-lg-6">
+                    <h4 class="h6 mb-3">Сфера деятельности</h4>
+                    <div class="form-group">
+                      <label class="sr-only" for="job-area-input">Сфера деятельности</label>
+                      <input class="form-control" id="job-area-input" type="tel" name="job_area" placeholder="Введите сферу деятельности" required>
+                    </div>
+                  </section>
+                </div>
+
+                <section class="mb-3">
+                  <h4 class="h6 mb-3">Текст обращения</h4>
+                  <div class="row">
+                    <div class="col-12">
+                      <label class="sr-only" for="body-input">Текст обращения</label>
+                      <textarea class="form-control" name="body" id="body-input" placeholder="Введите текст" rows="6" required></textarea>
+                    </div>
+                  </div>
+                </section>
+
+                <div class="d-flex flex-wrap align-items-center">
+                  <button class="btn btn-primary btn-lg mr-4 text-uppercase" type="submit">Отправить</button>
+                  <div>
+                    <label class="sr-only" for="file-input">Файл для закрепления</label>
+                    <input class="form-control-file" id="file-input" name="attachment" type="file">
                   </div>
                 </div>
-              </section>
-            </form>
-          </div>
+              </form>
+          </section>
 
-          <div class="col-md-4 col-lg-3">
-            
-          </div>
-        </section>
+          <section class="col-md-4 col-lg-3">
+            <h3 class="h5 mb-3">Телефоны</h3>
+            <p class="mb-1"><a href="tel:+380445039103">+38 (044) 503 91 03</a></p>
+            <p class="mb-1"><a href="tel:+380445039104">+38 (044) 503 91 04</a></p>
+          </section>
+        </div>
 
       </div>
     </section>
