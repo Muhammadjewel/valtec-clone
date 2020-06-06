@@ -1,0 +1,10 @@
+.blog-list__img {
+  width: 352px;
+  height: 190px;
+  object-fit: cover;
+}
+@include media-breakpoint-down(sm) {
+  .blog-list__img {
+    width: 100%;
+  }
+}
