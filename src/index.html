@@ -7,6 +7,7 @@
   <title>Valtec clone</title>
 
   <!-- Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -41,7 +42,10 @@
         <!-- sitenav__bottom -->
         <div class="sitenav__bottom row align-items-center py-3">
           <div class="d-none d-md-block col-md-3">
-            <button class="site-header__catalog-toggler btn btn-sm btn-outline-primary" type="button">Каталог товаров</button>
+            <button class="site-header__catalog-toggler btn btn-sm btn-outline-primary" type="button">
+              <i class="fas fa-th mr-1"></i>
+              Каталог товаров
+            </button>
           </div>
 
           <div class="d-none d-md-block col-md-6">
@@ -53,14 +57,20 @@
           </div>
 
           <div class="col-md-3 text-right"> 
-            <button class="sitenav__menu-toggler btn btn-sm btn-outline-primary" type="button">Меню</button>
+            <button class="sitenav__menu-toggler btn btn-sm btn-outline-primary" type="button">
+              Меню
+              <i class="fas fa-align-right ml-1"></i>
+            </button>
 
             <div class="sitenav__menu p-4 p-md-5 text-left shadow bg-white">
               <div class="d-flex align-items-center">
                 <a class="mr-2 d-md-none" href="#">РУС</a>
                 <a class="mr-2 d-md-none" href="#">УКР</a>
                 <div class="d-md-none mx-auto">USD: 28</div>
-                <button class="sitenav__menu-close btn btn-sm btn-link" type="button">Закрыть</button>
+                <button class="sitenav__menu-close btn btn-sm btn-link" type="button">
+                  <i class="fas fa-times mr-1"></i>
+                  Закрыть
+                </button>
               </div>
 
               <form class="d-md-none my-3" method="GET" action="search.php">
