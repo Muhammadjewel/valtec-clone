@@ -1,3 +1,11 @@
+.catalog .accordion a {
+  color: $dark;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $primary;
+  }
+}
 .catalog__card {
   transition: box-shadow 0.3s ease;
 
