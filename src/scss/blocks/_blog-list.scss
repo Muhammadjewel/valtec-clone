@@ -29,3 +29,8 @@
     width: 100%;
   }
 }
+@include media-breakpoint-up(md) {
+  .blog-list__category + .blog-list__category {
+    margin-left: -1px;
+  }
+}
