@@ -1,9 +1,18 @@
 .page-breadcrumbs .breadcrumb {
   flex-wrap: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.page-breadcrumbs .breadcrumb-item.active,
+.page-breadcrumbs .breadcrumb-item {
+  max-width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.page-breadcrumbs .breadcrumb-item:first-child,
+.page-breadcrumbs .breadcrumb-item:nth-child(2) {
+  flex-shrink: 0;
+}
 .page-breadcrumbs .breadcrumb-item a {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
