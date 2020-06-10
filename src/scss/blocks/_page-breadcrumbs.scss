@@ -1,0 +1,9 @@
+.page-breadcrumbs .breadcrumb {
+  flex-wrap: nowrap;
+}
+.page-breadcrumbs .breadcrumb-item.active,
+.page-breadcrumbs .breadcrumb-item a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
