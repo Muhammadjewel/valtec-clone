@@ -16,6 +16,7 @@ var sources = {
     'node_modules/jquery/dist/jquery.min.js',
     'src/js/popper.min.js',
     'node_modules/bootstrap/dist/js/bootstrap.min.js',
+    'node_modules/tiny-slider/dist/tiny-slider.js',
     'src/js/main.js'
   ]
 };
