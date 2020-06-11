@@ -102,6 +102,16 @@ $(document).ready(function () {
 
 // NEW-PRODUCTS SLIDER
 var newProductsSlider = tns({
+  container: '.main-slider',
+  items: 1,
+  mouseDrag: true,
+  nav: false,
+  arrowKeys: true,
+  mode: 'gallery'
+});
+
+// NEW-PRODUCTS SLIDER
+var newProductsSlider = tns({
   container: '.new-products__slider',
   items: 1,
   gutter: 30,
