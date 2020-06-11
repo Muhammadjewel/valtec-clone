@@ -102,12 +102,15 @@ $(document).ready(function () {
 
 // NEW-PRODUCTS SLIDER
 var newProductsSlider = tns({
-  container: '.main-slider',
+  container: '.main-slider__list',
   items: 1,
   mouseDrag: true,
   nav: false,
   arrowKeys: true,
-  mode: 'gallery'
+  prevButton: '.main-slider__button--prev',
+  nextButton: '.main-slider__button--next',
+  mode: 'gallery',
+  loop: true
 });
 
 // NEW-PRODUCTS SLIDER
