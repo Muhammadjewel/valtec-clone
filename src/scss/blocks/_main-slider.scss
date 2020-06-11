@@ -3,6 +3,10 @@
 }
 .main-slider__item {
   position: relative;
+  min-height: 350px;
+}
+.main-slider__img {
+  min-height: 350px;
 }
 .main-slider__caption {
   position: absolute;
