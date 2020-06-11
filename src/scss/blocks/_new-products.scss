@@ -1,0 +1,13 @@
+.new-products__slider {
+  padding: 20px 0;
+}
+.new-products__slider-button {
+  padding: 5px 10px;
+  border: none;
+  margin-left: 10px;
+  background: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}

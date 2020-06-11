@@ -99,3 +99,26 @@ $(document).ready(function () {
     $(this).next().slideToggle();
   })
 });
+
+// NEW-PRODUCTS SLIDER
+var newProductsSlider = tns({
+  container: '.new-products__slider',
+  items: 1,
+  gutter: 30,
+  mouseDrag: true,
+  nav: false,
+  arrowKeys: true,
+  prevButton: '.new-products__slider-button--prev',
+  nextButton: '.new-products__slider-button--next',
+  responsive: {
+    640: {
+      items: 2
+    },
+    900: {
+      items: 3
+    },
+    1100: {
+      items: 4
+    }
+  }
+});
