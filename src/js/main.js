@@ -97,11 +97,11 @@ $(document).ready(function () {
   $('.sitenav__dropdown-toggler').on('click', function (evt) {
     evt.preventDefault();
     $(this).next().slideToggle();
-  })
+  });
 });
 
-// NEW-PRODUCTS SLIDER
-var newProductsSlider = tns({
+// MAIN SLIDER
+var mainSlider = tns({
   container: '.main-slider__list',
   items: 1,
   mouseDrag: true,
