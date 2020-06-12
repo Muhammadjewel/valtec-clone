@@ -139,3 +139,14 @@ if (document.querySelector('.new-products__slider')) {
     }
   });
 }
+
+if (document.querySelector('.product-info__img-slider')) {
+  var productImagesSlider = tns({
+    container: '.product-info__img-slider',
+    items: 1,
+    controlsPosition: 'bottom',
+    navPosition: 'bottom',
+    controlsText: ['<span class="i fas fa-long-arrow-alt-left" aria-hidden="true"></span>', '<span class="i fas fa-long-arrow-alt-right" aria-hidden="true"></span>'],
+    mouseDrag: true
+  });
+}
