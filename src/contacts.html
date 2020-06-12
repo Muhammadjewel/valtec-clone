@@ -285,8 +285,11 @@
                 <div class="d-flex flex-wrap align-items-center">
                   <button class="btn btn-primary btn-lg mr-4 text-uppercase" type="submit">Отправить</button>
                   <div>
-                    <label class="sr-only" for="file-input">Файл для закрепления</label>
-                    <input class="form-control-file" id="file-input" name="attachment" type="file">
+                    <label for="file-input">
+                      <span class="fas fa-paperclip text-muted"></span>
+                      <span class="text-muted">Прикрепить файл</span>
+                      <input class="form-control-file sr-only" id="file-input" name="attachment" type="file">
+                    </label>
                   </div>
                 </div>
               </form>
