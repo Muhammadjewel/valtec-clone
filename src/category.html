@@ -7,11 +7,187 @@
   <title>Valtec clone. Категория</title>
 
   <!-- Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="d-flex flex-column bg-light">
 
+  <!-- SITE-HEADER -->
+  <header class="site-header fixed-top d-flex flex-column bg-white shadow-sm">
+    <!-- NAVBAR -->
+    <nav class="sitenav">
+      <div class="container sitenav__container">
+        <!-- sitenav__top -->
+        <div class="sitenav__top row align-items-center py-3 text-muted">
+          <!-- Motto and phone number -->
+          <div class="col-md-4 d-none d-md-flex flex-wrap">
+            <p class="m-0 mr-auto">Качество, проверенное временем</p>
+            <a href="tel:+380445039103">+38 044 503 91 03</a>
+          </div>
+          <!-- Logo wrapper -->
+          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-md-center align-items-center pl-0 pl-md-3">
+            <a href="index.html">
+              <img src="https://placehold.it/209x46" alt="Logo" width="209" height="46">
+            </a>
+          </div>
+          <!-- Language and currency -->
+          <div class="col-12 col-sm-6 col-md-3 offset-md-1 d-none d-md-flex">
+            <a class="mr-2" href="#">РУС</a>
+            <a class="mr-2" href="#">УКР</a>
+            <div class="ml-auto">USD: 28</div>
+          </div>
+        </div><!-- /sitenav__top -->
+  
+        <!-- sitenav__bottom -->
+        <div class="sitenav__bottom row align-items-center py-3">
+          <div class="d-none d-md-block col-md-3">
+            <button class="site-header__catalog-toggler btn btn-sm btn-outline-primary" type="button">
+              <i class="fas fa-th mr-1"></i>
+              Каталог товаров
+            </button>
+          </div>
+  
+          <div class="d-none d-md-block col-md-6">
+            <form method="GET" action="search.php">
+              <label class="sr-only" for="sitenav-search-input">Поиск</label>
+              <input class="form-control form-control-sm border-0 bg-light" type="search" id="sitenav-search-input"
+                name="search" placeholder="Я ищу" required>
+            </form>
+          </div>
+  
+          <div class="col-md-3 text-right">
+            <button class="sitenav__menu-toggler btn btn-sm btn-outline-primary" type="button">
+              Меню
+              <i class="fas fa-bars ml-1"></i>
+            </button>
+  
+            <div class="sitenav__menu p-4 p-md-5 text-left shadow bg-white">
+              <div class="d-flex align-items-center">
+                <a class="mr-2 d-md-none" href="#">РУС</a>
+                <a class="mr-2 d-md-none" href="#">УКР</a>
+                <div class="d-md-none mx-auto">USD: 28</div>
+                <button class="sitenav__menu-close btn btn-sm btn-link" type="button">
+                  <i class="fas fa-times mr-1"></i>
+                  Закрыть
+                </button>
+              </div>
+  
+              <form class="d-md-none my-3" method="GET" action="search.php">
+                <label class="sr-only" for="dropdown-search-input">Поиск</label>
+                <input class="form-control form-control-sm border-0 bg-light" type="search" id="dropdown-search-input"
+                  name="search" placeholder="Я ищу" required>
+              </form>
+  
+              <ul class="list-unstyled font-weight-bold">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="#">Где купить</a></li>
+                <li>
+                  <a class="sitenav__dropdown-toggler dropdown-toggle" href="#">Поддержка</a>
+                  <ul class="sitenav__dropdown-menu list-unstyled pl-3 font-weight-normal">
+                    <li><a href="#">Программы</a></li>
+                    <li><a href="#">Чертежи продукции</a></li>
+                    <li><a href="#">Паспорта и сертификаты</a></li>
+                    <li><a href="post.html">Вебинары и семинары</a></li>
+                  </ul>
+                </li>
+                <li><a href="blog.html">Публикации</a></li>
+                <li>
+                  <a class="sitenav__dropdown-toggler dropdown-toggle" href="#">Сотрудничество</a>
+                  <ul class="sitenav__dropdown-menu list-unstyled pl-3 font-weight-normal">
+                    <li><a href="#">Прайс</a></li>
+                    <li><a href="#">Партнерам</a></li>
+                    <li><a href="#">Рекламная поддержка</a></li>
+                  </ul>
+                </li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+  
+              <hr>
+  
+              <section class="pb-4">
+                <h2 class="small text-muted">Следите за нами в соцсетях</h2>
+                <ul class="list-unstyled mb-md-0 mb-3">
+                  <li><a href="#" target="_blank">Facebook</a></li>
+                  <li><a href="#" target="_blank">YouTube</a></li>
+                  <li><a href="#" target="_blank">Instagram</a></li>
+                  <li><a href="#" target="_blank">Telegram</a></li>
+                </ul>
+                <a class="d-md-none" href="tel:+380445039103">+38 044 503 91 03</a>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div><!-- /sitenav__bottom -->
+    </nav>
+  
+    <!-- CATALOG DROPDOWN MENU -->
+    <section class="site-header__catalog flex-grow-1 overflow-auto py-4">
+      <h2 class="sr-only">Каталог товаров</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="product.html">Товар #1</a></li>
+              <li><a href="product.html">Товар #2</a></li>
+              <li><a href="product.html">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="product.html">Товар #1</a></li>
+              <li><a href="product.html">Товар #2</a></li>
+              <li><a href="product.html">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="product.html">Товар #1</a></li>
+              <li><a href="product.html">Товар #2</a></li>
+              <li><a href="product.html">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="product.html">Товар #1</a></li>
+              <li><a href="product.html">Товар #2</a></li>
+              <li><a href="product.html">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="product.html">Товар #1</a></li>
+              <li><a href="product.html">Товар #2</a></li>
+              <li><a href="product.html">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="product.html">Товар #1</a></li>
+              <li><a href="product.html">Товар #2</a></li>
+              <li><a href="product.html">Товар #3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="h5">Название каталога</h3>
+            <ul class="list-unstyled">
+              <li><a href="product.html">Товар #1</a></li>
+              <li><a href="product.html">Товар #2</a></li>
+              <li><a href="product.html">Товар #3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
   
 
   <!-- MAIN-CONTENT -->
