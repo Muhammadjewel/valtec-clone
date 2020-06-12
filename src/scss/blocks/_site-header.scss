@@ -16,6 +16,13 @@
     display: block;
   }
 }
+@media only screen and (max-width: 940px) {
+  .site-header__catalog-toggler {
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+}
 @include media-breakpoint-down(sm) {
   .site-header__catalog {
     display: none;
