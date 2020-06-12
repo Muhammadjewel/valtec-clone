@@ -142,6 +142,8 @@ if (document.querySelector('.new-products__slider')) {
 
 if (document.querySelector('.product-info__img-slider')) {
   var productImagesSlider = tns({
+    autoHeight: true,
+    rewind: true,
     container: '.product-info__img-slider',
     items: 1,
     controlsPosition: 'bottom',
